@@ -2,19 +2,19 @@ import random
 import time
 
 questions = [
-    ("Viss bagātākais cilvēks pasaulē?", "Bernards Arnaults"),
+    ("Viss bagātākais cilvēks pasaulē? (atbildi raksti ar mazajiem burtiem)", "bernards arnaults"),
     ("Viss vērtīgākais uzņēmums pasaulē?", "apple"), 
     ("Uzraksti šī jēdziena vārdu: Izplatītākais vīrišķais dzimumhormons?", "testosterons"),
     ("Kā sauc 7.A grupas vielas?", "halogēni"),
     ("Zemeslodes gaisa apvalks?", "atmosfēra"),
     ("Telpa kurā gandrīz nav vielu?", "vakuums"),
     ("Ko nozīmē splendid? (1 vārds)", "lieliski"),
-    ("ko nozīmē exquizit taste?", "izsmalcināta garša")
+    ("ko nozīmē exquizit taste?", "izsmalcināta garša"),
     ("Tauta kurā nebija valdniecība?", "barbari"),
     ("Eiropas mūzikas stils laika periodā no 1750. gada līdz 1820?", "klasicisms"),
     ("Garākā upe pasaulē?", "amazone"),
     ("Sociālā mediju platforma ar vissvairāk aktīvajiem lietotajiem?", "facebook")
-    # pārveido dictionary uz listu ,kas ir tuple
+    
 ]
 
 def play_game():
@@ -34,7 +34,7 @@ def play_game():
             if time_taken < 15:
                 print("You answered quickly!")
             elif time_taken > 30:
-                print("You took too much time to answer!")
+                print("You took too long to answer!")
         else:
             print(f"Sorry, that's incorrect. The correct answer is: {answer}")
     print(f"\nGame Over! You got {score} out of {len(questions)} questions correct.")
